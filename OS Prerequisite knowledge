@@ -1,0 +1,10 @@
+Three kind of events:
+1. person: A person arrives in the queue at a bus stop  Action: After a random (exponentially-distributed interarrival) time, 
+another person is scheduled to arrive in the queue 
+
+2. arrival: A bus arrives at a bus stop  Action: If there is no one in the queue, the bus proceeds to the next stop, and 
+the event of its arrival there is generated; otherwise, the event to be generated (at present time!) is the first person 
+in the queue boarding the bus;
+
+3. boarder: A person boards the bus  Action: The length of the queue diminishes by 1; 
+If the queue is now empty, the bus proceeds to the next stop, otherwise the next passenger boards the bus 
